@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ros:
+    image: joelimgu/geicar:latest
+    volumes:
+      - ./project:/voiture
+    entrypoint: ros2 launch ...
+
+
