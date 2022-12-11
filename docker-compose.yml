@@ -2,8 +2,8 @@ version: "3"
 services:
   ros:
     image: joelimgu/geicar:latest
+    ports:
+      - 2222:22
     volumes:
       - ./project:/voiture
-    entrypoint: ros2 launch ...
-
-
+    entrypoint: /voiture/entrypoint.sh 
