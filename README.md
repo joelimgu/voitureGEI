@@ -16,5 +16,5 @@ Lancer le docker sur la jetson (detached):
 Fermer/stop le container:
 ```docker compose down```
 
-⚠ Warning: toutes les commandes de docker compose doiventêtre lancées dans le directoire avec le fichier docker-compose.yml
+⚠ Warning: toutes les commandes de docker compose doivent être lancées dans le directoire avec le fichier docker-compose.yml
 

@@ -3,7 +3,13 @@ services:
   ros:
     image: joelimgu/geicar:latest
     ports:
-      - 2222:22
+      - 2200:22
     volumes:
       - ./project:/voiture
-    entrypoint: /voiture/entrypoint.sh 
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+      - "/dev/video0:/dev/video0"
+    network_mode: host
+    restart: always
+    entrypoint: voiture/entrypoint.sh
+
